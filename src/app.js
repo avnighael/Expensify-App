@@ -15,7 +15,7 @@ store.dispatch(addExpense({ description: 'Water Bill', amount: 300, createdAt: 2
 store.dispatch(addExpense({ description: 'Gas bill', amount:100, createdAt: 1000 }));
 
 // console.log(store.getState());
-store.dispatch(setTextFilter('bill'));
+store.dispatch(setTextFilter('water'));
 
 const state = store.getState();
 const visibleExpenses = getVisibleExpenses(state.expenses, state.filters);
